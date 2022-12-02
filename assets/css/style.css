@@ -14,9 +14,16 @@
   --body-color: hsl(206, 4%, 97%);
   --container-color: #fff;
   --border-color: hsl(0, 0%, 94%);
+ 
 
   /*========== Font and typography ==========*/
   --body-font: 'Roboto', sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*=============== THEME ===============*/
@@ -433,3 +440,107 @@
 
 
 /* Diana */
+.products_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-family: var(--body-font)
+  
+}
+.products{
+  display: inline-block;
+  flex-direction: column;
+  
+
+  
+}
+.products_options{
+  background-color: transparent;
+  border: none;
+  box-shadow: 5px 0 2px 0 var(--button-color-alt);
+  gap: 56px;
+  width: 48%;
+  height: 70px;
+  
+}
+.products_options_titles{
+  font-size: 17px;
+  font-weight: 500;
+}
+.products_options_titles:hover{
+  font-weight: 700;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 50px 0 120px 0;
+}
+.box_products{
+
+  background-color: var(--card-color);
+  border-radius: 8px 8px 8px 8px;
+  position: relative;
+}
+.box_products > img{
+  width: 150px;
+  height: 135px;
+}
+.box_products_text{
+  background-color: var(--container-color);
+  border-radius: 0 0 8px 8px;
+  text-align: start;
+  padding: 10px 0px 10px 10px ;
+  
+  
+}
+.box_products_prince{
+  font-size: 17px;
+  font-weight: 600;
+
+}
+span{
+  
+  border-left:1px solid #000 ;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 6px;
+  padding-left: 1px;
+}
+.box_products_add{
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 120px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 15px;
+}
+footer{
+  padding:100px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+  background-color:var(--card-color);
+  line-height: 35px;
+  gap: 20px;
+  font-family: var(--body-font)
+}
+li{
+ list-style: none;
+ ;
+}
+a{
+  text-decoration: none;
+  color: var(--title-color);
+  
+}
+.footer_social{
+  gap: 10px;
+}
