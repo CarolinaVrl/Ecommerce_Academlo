@@ -102,7 +102,7 @@ body.dark{
 .icon1{
   position: relative;
   z-index: 2;
-
+  
 }
 
 .icon2{
@@ -211,7 +211,7 @@ body.dark{
 
 
 .hidden{
-  display: flex;
+  display: none;
   flex-direction: row;
   background-color: antiquewhite;
   width: 180px;
@@ -980,6 +980,9 @@ tablet-landscape: min:1024px; */
 
 
  /* Diana */
+ .products_container{
+  margin-top: 200px;
+ }
 
 
  .box_products{
@@ -998,7 +1001,7 @@ tablet-landscape: min:1024px; */
   font-size: 20px;
  }
  .box_products_add{
-  top:236px;
+  top:222spx;
   width: 50px;
   height: 50px;
   font-size: 18px;
