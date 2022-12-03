@@ -24,3 +24,6 @@ const items = [
       quantity: 20
     }
   ]
+
+const theme = document.getElementById("theme")
+theme.addEventListener
