@@ -28,15 +28,17 @@ const items = [
   // imagen del theme
 const theme = document.getElementById("theme")
 const body = document.body
-theme.addEventListener("click", cb =>{
+const darthemechange = () => {
   body.classList.toggle("dark")
-   if (theme.classList.contains("bx-moon")){
-    theme.classList.replace("bx-sun")
-   }else{ theme.classList.add("bx-moon")
+   if (theme.classList.contains("bx-sun")){
+    theme.classList.replace("bx-sun", "bx-moon")
+   }else{ theme.classList.replace("bx-moon", "bx-sun")
 
-  } 
+  }
 
-})
+}
+theme.addEventListener("click", e =>darthemechange ())
+
 
   
 
