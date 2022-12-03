@@ -42,6 +42,7 @@
 
 body{
   background-color: hsl(206, 4%, 97%);
+  font-family: var(--body-font);
 }
   
 *{
@@ -56,7 +57,7 @@ body{
   align-items: center;
   height: 80px;
   background-color: transparent;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
   position:relative;
@@ -111,14 +112,19 @@ body{
 }
 
 .title{
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
 }
 
+.title2{
+  font-size: 32px;
+  font-weight: bold;
+}
 
 .description{
   margin-top: 20px;
   line-height: 15px;
+  font-size: 15px;
 }
 
 
@@ -583,10 +589,33 @@ tablet-portrait: min:768px - max:1023px;
 tablet-landscape: min:1024px; */
 
 /* Media querys */
-@media screen and (min-width: 520px) {
+@media screen and (min-width: 575px) {
  
+.home{
+  left: 325px;
+}
 
+.img-home{
+  margin-top: 90px;
+}
 
+.price{
+  font-size: 20px;
+}
+
+.btn-discover{
+  width: 107px;
+  height: 50px;
+  font-size: 15px;
+  font-family: var(--body-font);
+}
+
+.btn-cart{
+  width: 150px;
+  height: 58px;
+  font-size: 15px;
+  font-family: var(--body-font);
+}
 
 
 
@@ -621,14 +650,72 @@ tablet-landscape: min:1024px; */
 
 
 }
-@media screen and (min-width: 720px) {
- 
+@media screen and (min-width: 778px) {
 
+  .home{
+    width: 340px;
+    height: 430px;
+    left: 438px;
+  }
 
+  .img-home{
+    width: 340px;
+    height: 340px;
+    margin-top: 80px;
+  }
 
+  .title{
+    position:static;
+    margin-right: 20px;
+    margin-top: 40px;
+  }
 
+  .title2{
+    position: static;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
 
+  .description{
+    position:static;
+    top: 220px;
+    margin-right: 20px;
+  }
 
+  .price{
+    position: static;
+    top: 290px;
+    margin-top: 30px;
+  }
+
+  .text{
+    position:sticky;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding: 0;
+  }
+
+  .nav-menu{
+    padding: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .btn-section{
+    position: sticky;
+    
+  }
+
+  .btn-discover{
+    position:static;
+    margin-top: 61px;
+    margin-left: 24px;
+  }
+
+  .btn-cart{
+    position: static;
+    
+  }
 
 
 
