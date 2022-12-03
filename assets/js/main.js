@@ -29,15 +29,15 @@ const items = [
 const theme = document.getElementById("theme")
 const body = document.body
 theme.addEventListener("click", cb =>{
+  body.classList.toggle("dark")
+   if (theme.classList.contains("bx-moon")){
+    theme.classList.replace("bx-sun")
+   }else{ theme.classList.add("bx-moon")
+
+  } 
+
+})
+
   
-  if (body.classList.contains("dark")){
-    body.classList.remove("dark")
-    }else{
-      body.classList.add("dark")
-
-    }
-  }
-  
 
 
-)
