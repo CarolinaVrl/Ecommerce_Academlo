@@ -428,7 +428,7 @@ body{
   align-content: center;
   text-align: center;
   font-family: var(--body-font);
-  margin-top: 550px;
+  margin-top: 550px; 
   
   
 }
@@ -560,9 +560,7 @@ footer{
   width: 200px;
 
 }
-.first{
-  padding-left: 20px;
-}
+
 
 li{
  list-style: none;
@@ -775,7 +773,9 @@ tablet-landscape: min:1024px; */
   
   
  
-
+  .products_container{
+    margin-top: 100px;
+  }
 
 
   
