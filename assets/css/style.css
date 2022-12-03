@@ -454,22 +454,38 @@ body{
   flex-direction: column;
   gap: 30px;
   padding: 50px 0 120px 0;
+  
+  
 }
 .box_products{
 
   background-color: var(--card-color);
   border-radius: 8px 8px 8px 8px;
+  width: 220px;
+  height: 230px;
   position: relative;
+    
 }
 .box_products > img{
   width: 150px;
   height: 135px;
+  position: relative;
+  top: 15px;
+}
+.box_products > img:hover{
+  position:relative;
+  top: 12px;
+  transition: 0.4s;
+  
 }
 .box_products_text{
   background-color: var(--container-color);
   border-radius: 0 0 8px 8px;
   text-align: start;
   padding: 10px 0px 10px 10px ;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   
   
 }
@@ -486,21 +502,29 @@ span{
   margin-left: 6px;
   padding-left: 1px;
 }
+/* Agregar productos */
 .box_products_add{
   position: absolute;
-  z-index: 2;
-  right: 10px;
-  top: 120px;
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: none;
-  font-weight: 700;
-  font-size: 15px;
-  box-shadow: 8px 11px 17px -2px rgba(186,177,177,0.75);
+ z-index: 2;
+ right: 15px;
+ top: 148px;
+ width: 45px;
+ height: 45px;
+ border-radius: 50%;
+ border: none;
+ font-weight: 700;
+ font-size: 15px;
+ box-shadow: 8px 11px 17px -2px rgba(186,177,177,0.75);
 }
+
+.box_products_add:hover{
+  background-color: var(--first-color);
+  color: var(--container-color);
+}
+
 footer{
-  padding:100px 0 0 20px;
+  padding:100px 0 150px 20px;
+
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -519,6 +543,178 @@ a{
   color: var(--title-color);
   
 }
-.footer_social{
-  gap: 10px;
+.footer_social_logos{
+  display: flex;
+  gap: 20px;
+  font-size:32px;
+}
+.footer_social_logos:hover{
+  cursor: pointer;
+  animation: socialmove 2s;
+
+}
+@keyframes socialmove{
+  50%{}
+  100%{}
+
+}
+.rigth{
+  font-size: 12px;
+  font-family: var(--body-font);
+  background-color:var(--card-color);
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/* mobile-portrait: min:320px - max:479px;
+mobile-landscape: min:480px - max:599px;
+small-tablet-portrait: min:600px - max:799px;
+small-tablet-landscape: min:800px - max:767px;
+tablet-portrait: min:768px - max:1023px;
+tablet-landscape: min:1024px; */
+
+/* Media querys */
+@media screen and (min-width: 520px) {
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diana */
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 720px) {
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Diana */
+
+
+
+
+
+}
+@media screen and (min-width: 920px) {
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Diana */
+
+
+
+
+
+
+
+
+}
+@media screen and (min-width: 1200px) {
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Diana */
 }
