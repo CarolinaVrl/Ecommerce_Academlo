@@ -697,6 +697,12 @@ tablet-landscape: min:1024px; */
     margin-top: 80px;
   }
 
+  .home{
+    left: 438px;
+    width: 340px;
+    height: 430px;
+  }
+
   .title{
     position:static;
     margin-right: 20px;
