@@ -25,5 +25,11 @@ const items = [
     }
   ]
 
+  // imagen del theme
 const theme = document.getElementById("theme")
-theme.addEventListener
+const body = document.body
+theme.addEventListener("click", cb =>{
+  body.classList.add("dark")
+
+
+})
