@@ -102,7 +102,13 @@ body.dark{
 .icon1{
   position: relative;
   z-index: 2;
-  
+
+}
+
+.icon2{
+  position: relative;
+  z-index: 2;
+
 }
 
 .icon1:hover{
@@ -179,6 +185,7 @@ body.dark{
 .btn-discover:hover{
   color: white;
   cursor: pointer;
+  transition: .5s;
 }
 
 .btn-cart{
@@ -199,12 +206,22 @@ body.dark{
 .btn-cart:hover{
   background-color: var(--first-color);
   cursor: pointer;
+  transition: .5s;
 }
 
 
+.hidden{
+  display: flex;
+  flex-direction: row;
+  background-color: antiquewhite;
+  width: 180px;
+  justify-content: space-between;
+  margin-left: 40px;
+}
 
-
-
+.homes{
+  color: var(--first-color);
+}
 
 
 
@@ -725,6 +742,9 @@ tablet-landscape: min:1024px; */
   font-family: var(--body-font);
 }
 
+.hidden{
+  display: none;
+}
 
 
 
@@ -841,8 +861,18 @@ tablet-landscape: min:1024px; */
     
   }
 
+  .hidden{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    justify-content: space-evenly;
+    margin-left: 20px;
+    background-color: transparent;
+  }
 
-
+  .icon2{
+    display: none;
+  }
 
 
 
