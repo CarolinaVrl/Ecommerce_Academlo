@@ -34,13 +34,14 @@
             <div class="icons" >
             <i class='bx bx-moon bx-sm icon1' id="theme" ></i>
             <div class="cart-design">
-             <img class="icon1" src="./assets/icons/shopping-bag-regular-24.png" alt="">
+             <img class="icon1" onclick="click" id="bag_shop" src="./assets/icons/shopping-bag-regular-24.png" alt="">
              <span class="cart-counter" id="cart-counter">0</span>
             </div>
             <img class="icon2" src="./assets/icons/grid-alt-regular-24.png" alt="">
             </div>
         </nav>
 </header>
+
 
 <section>
     <div class="home">
@@ -65,10 +66,10 @@
     </div>
 </section>
 
-<div class="cart-container hide" id="cart-container">
+<div class="cart-container " id="cart-container">
     <div class="cart" id="cart">
       <div class="nav-close" id="close-cart">
-        <i class='bx bx-x'></i>
+        
       </div>
 
     </div>
@@ -250,7 +251,10 @@
     </footer>
     <div class="rigth">Academlo. All Rigth Reserved</div>
   </main>
-  <div class="cart_container hide" id="cart_container">
+  <div class="cart_container compras_bag" id="cart_container">
+    <div class="cart_close">
+      <i class='bx bx-x bx-rotate-90' onclick="click" id="closer" ></i>
+    </div>
     <div><h2>My Cart</h2></div>
     <div class="cart_img"> <img src="/assets/images/empty-cart.png" alt="Your bag">
       <h3>Your cart is empty</h3>
@@ -259,16 +263,20 @@
       </p>
     </div>
     <div class="cart_value">
-      <div><span>0</span>items</div>
-      <div>$ <span>0.00</span><div>
+      <div ><span>0</span> items</div>
+      <div><span>$</span> 0.00</div>
+    </div>  
+    <div class="container_comprar">
+      <button class="comprar">
+        <i class='bx bxs-check-shield' ></i>
+        Checkout
+      </button>
     </div>
-    <button class="comprar">
-      <i class='bx bxs-check-shield' ></i>
-      Checkout
-    </button>
+    
    
    
   </div>
+ 
 
   <script src="/assets/js/main.js"></script>
   

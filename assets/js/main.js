@@ -37,3 +37,21 @@ const darthemechange = () => {
   }
 };
 theme.addEventListener("click", (e) => darthemechange());
+
+// bolsa de compras - carrito
+const bag =document.getElementById("bag_shop"
+)
+const carrito = document.getElementById("cart_container")
+const closerCarrito = document.getElementById("closer")
+bag.addEventListener("click", cb=>{
+  if (carrito.classList.contains("compras_bag")){
+    carrito.classList.remove("compras_bag")
+  }else{
+    
+  }
+})
+closerCarrito.addEventListener("click", cb =>{
+  if (carrito.classList.contains("compras_bag")){
+    
+  }carrito.classList.add("compras_bag")
+})
