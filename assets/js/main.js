@@ -54,6 +54,25 @@ closerCarrito.addEventListener("click", (cb) => {
   carrito.classList.add("compras_bag");
 });
 
+//social redes/ mousemove
+const facebook = document.getElementById("facebook")
+const twitter = document.getElementById("twitter")
+const instagram = document.getElementById("instagram")
+facebook.addEventListener("mousemove", e=>{
+  facebook.classList.toggle("bx-tada")
+})
+twitter.addEventListener("mousemove", e=>{
+  twitter.classList.toggle("bx-tada")
+})
+instagram.addEventListener("mousemove", e=>{
+  instagram.classList.toggle("bx-tada")
+})
+
+
+
+
+
+
 // filtrado de productos
 const allProducts = document.getElementById("all_productos");
 const hoodie = document.getElementById("hoodies");
