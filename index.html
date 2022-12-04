@@ -1,289 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Academlo Store</title>
-</head>
-<body>
-  <!--  -->
-<header>
-        <nav class="nav-menu">
-          <div class="logo">
-            <svg class="academlo-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.92 56.48">
-                <title>Academlo Logo</title>
-                <g>
-                  <g>
-                    <path
-                      d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z">
-                    </path>
-                  </g>
-                </g>
-            </svg>
-            <p>STORE</p>
-            <div class="hidden">
-              <p class="homes">Home</p>
-              <p class="product">Products</p>
-            </div>
+  </head>
+  <body>
+    <!--  -->
+    <header>
+      <nav class="nav-menu">
+        <div class="logo">
+          <svg
+            class="academlo-logo"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48.92 56.48"
+          >
+            <title>Academlo Logo</title>
+            <g>
+              <g>
+                <path
+                  d="M28.58,15.39H25.16L35.78,36H31.49L20.67,15.71,8.23,38.82H18.94l3-5.43h-3.4l-1.47,2.54h-4l2.69-5.09H25.85l4.28,8H40.67ZM17.23,28.21l3.57-6.6,3.57,6.6Z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <p>STORE</p>
+          <div class="hidden">
+            <p class="homes">Home</p>
+            <p class="product">Products</p>
           </div>
-            <div class="icons" >
-            <i class='bx bx-moon bx-sm icon1' id="theme" ></i>
-            <div class="cart-design">
-             <img class="icon1" onclick="click" id="bag_shop" src="./assets/icons/shopping-bag-regular-24.png" alt="">
-             <span class="cart-counter" id="cart-counter">0</span>
-            </div>
-            <img class="icon2" src="./assets/icons/grid-alt-regular-24.png" alt="">
-            </div>
-        </nav>
-</header>
-
-
-<section>
-    <div class="home">
-        <img class="img-home" src="./assets/images/home.png" alt="">
-    </div>
-</section>
-<section>
-    <div class="text">
-    <h1 class="title">New Sweatshirt</h1>
-    <h2 class="title2">COLLECTIONS 2023</h2>
-    <div class="description">
-    <p>Latest arrival of the Hanes Midweigth <br>Crewneck Sweatshirt imported from the 2022 <br> series, whit a modern design.</p>
-    </div>
-    <p class="price">$14.00</p>
-    </div>
-</section>
-
-<section>
-    <div class="btn-section">
-    <button class="btn-discover">Discover</button>
-    <button class="btn-cart">ADD TO CART</button>
-    </div>
-</section>
-
-<div class="cart-container " id="cart-container">
-    <div class="cart" id="cart">
-      <div class="nav-close" id="close-cart">
-        
-      </div>
-
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Diana -->
-  <main class="products_container">
-
-    <!-- Botones de Filtrado -->
-    <section class="products">
-      <div class="products_options" id="all_productos" onclick="click">
-        <h3 class="products_options_titles">Show All</h3>
-        <p>show all products</p>
-      </div>
-      <div class="products_options" id="hoodies" onclick="click">
-        <h3 class="products_options_titles" >Hoodies</h3>
-        <p>3 products</p>
-      </div>
-      <div class="products_options" id="shirts" onclick="click">
-        <h3 class="products_options_titles" >Shirts</h3>
-        <p>4 products</p>
-      </div>
-      <div class="products_options" id="sweatshirt" onclick="click">
-        <h3 class="products_options_titles" >Sweatshirts</h3>
-        <p>4 products</p>
+        </div>
+        <div class="icons">
+          <i class="bx bx-moon bx-sm icon1" id="theme"></i>
+          <div class="cart-design">
+            <img
+              class="icon1"
+              onclick="click"
+              id="bag_shop"
+              src="./assets/icons/shopping-bag-regular-24.png"
+              alt=""
+            />
+            <span class="cart-counter" id="cart-counter">0</span>
+          </div>
+          <img
+            class="icon2"
+            src="./assets/icons/grid-alt-regular-24.png"
+            alt=""
+          />
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div class="home">
+        <img class="img-home" src="./assets/images/home.png" alt="" />
       </div>
     </section>
-    <!-- container de productos -->
-    <article class="box">
-      <section class="box_products" >
-        <img src="/assets/images/featured1.png" alt="Hoodie red">
-        <div class="box_products_text">
-          <h2 class="box_products_prince"> $14.00<span class="stock">Stock: 1</span></h2>
-          <p>Hoodies</p>
-
+    <section>
+      <div class="text">
+        <h1 class="title">New Sweatshirt</h1>
+        <h2 class="title2">COLLECTIONS 2023</h2>
+        <div class="description">
+          <p>
+            Latest arrival of the Hanes Midweigth <br />Crewneck Sweatshirt
+            imported from the 2022 <br />
+            series, whit a modern design.
+          </p>
         </div>
-        <button class="box_products_add">+</button>
-      </section>
-      <section class="box_products">
-        <img src="/assets/images/featured2.png" alt="Shirts black">
-        <div class="box_products_text">
-          <h2 class="box_products_prince">$24.00 <span class="stock" >Stock: 10</span></h2>
-          <p>Shirts</p>
+        <p class="price">$14.00</p>
+      </div>
+    </section>
 
-        </div>
-        <button class="box_products_add">+</button>
-      </section>
-      <section class="box_products">
-        <img src="/assets/images/featured3.png" alt="Sweatshirts white">
-        <div class="box_products_text">
-          <h2 class="box_products_prince"> $24.00<span class="stock">Stock: 18</span></h2>
-          <p>Sweatshirts</p>
+    <section>
+      <div class="btn-section">
+        <button class="btn-discover">Discover</button>
+        <button class="btn-cart">ADD TO CART</button>
+      </div>
+    </section>
 
-        </div>
-        <button class="box_products_add">+</button>
-      </section>
-    </article>
-    <footer>
-      <section class="footer_container first"><h2 class="footer_titles ">Our information</h2>
-        <ul>
-          <li><a href="">Toluca - México</a></li>
-                          
-        </ul>
-      </section>
-      <section class="footer_container"><h2 class="footer_titles">About Us</h2>
-        <ul>
-          <li><a href="">Support Center</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Copy Right</a></li>
-        </ul>
-      </section>
-      <section class="footer_container">
-        <h2 class="footer_titles">Product 
-
-        </h2>
-        <ul>
-          <li><a href="">Hoodies</a></li>
-          <li><a href="">Shirts</a></li>
-          <li><a href="">Sweatshirts
-
-          </a></li>
-        </ul>
-      </section>
-      <section class="footer_social">
-        <h2 class="footer_titles">Social</h2>
-        <div class="footer_social_logos">
-          <i class='bx bxl-facebook'></i>
-          <i class='bx bxl-twitter' ></i>
-          <i class='bx bxl-instagram'></i>
-          
-          
-       
-
-      
-        </div>
-      </section>
-      
-    </footer>
-    <div class="rigth">Academlo. All Rigth Reserved</div>
-  </main>
-  <div class="cart_container compras_bag" id="cart_container">
-    <div class="cart_close">
-      <i class='bx bx-x bx-rotate-90' onclick="click" id="closer" ></i>
+    <div class="cart-container" id="cart-container">
+      <div class="cart" id="cart">
+        <div class="nav-close" id="close-cart"></div>
+      </div>
     </div>
-    <div><h2>My Cart</h2></div>
-    <div class="cart_img"> <img src="/assets/images/empty-cart.png" alt="Your bag">
-      <h3>Your cart is empty</h3>
-      <p>You can add items to your card by clicking on the "+" button
-        on the product page.
-      </p>
+
+    <!-- Diana -->
+    <main class="products_container">
+      <!-- Botones de Filtrado -->
+      <section class="products">
+        <div class="products_options" id="all_productos" onclick="click">
+          <h3 class="products_options_titles">Show All</h3>
+          <p>show all products</p>
+        </div>
+        <div class="products_options" id="hoodies" onclick="click">
+          <h3 class="products_options_titles">Hoodies</h3>
+          <p>3 products</p>
+        </div>
+        <div class="products_options" id="shirts" onclick="click">
+          <h3 class="products_options_titles">Shirts</h3>
+          <p>4 products</p>
+        </div>
+        <div class="products_options" id="sweatshirt" onclick="click">
+          <h3 class="products_options_titles">Sweatshirts</h3>
+          <p>4 products</p>
+        </div>
+      </section>
+      <!-- container de productos -->
+      <article class="box">
+        <section class="box_products">
+          <img src="/assets/images/featured1.png" alt="Hoodie red" />
+          <div class="box_products_text">
+            <h2 class="box_products_prince">
+              $14.00<span class="stock">Stock: 1</span>
+            </h2>
+            <p>Hoodies</p>
+          </div>
+          <button class="box_products_add">+</button>
+        </section>
+        <section class="box_products">
+          <img src="/assets/images/featured2.png" alt="Shirts black" />
+          <div class="box_products_text">
+            <h2 class="box_products_prince">
+              $24.00 <span class="stock">Stock: 10</span>
+            </h2>
+            <p>Shirts</p>
+          </div>
+          <button class="box_products_add">+</button>
+        </section>
+        <section class="box_products">
+          <img src="/assets/images/featured3.png" alt="Sweatshirts white" />
+          <div class="box_products_text">
+            <h2 class="box_products_prince">
+              $24.00<span class="stock">Stock: 18</span>
+            </h2>
+            <p>Sweatshirts</p>
+          </div>
+          <button class="box_products_add">+</button>
+        </section>
+      </article>
+      <footer>
+        <section class="footer_container first">
+          <h2 class="footer_titles">Our information</h2>
+          <ul>
+            <li><a href="">Toluca - México</a></li>
+          </ul>
+        </section>
+        <section class="footer_container">
+          <h2 class="footer_titles">About Us</h2>
+          <ul>
+            <li><a href="">Support Center</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Copy Right</a></li>
+          </ul>
+        </section>
+        <section class="footer_container">
+          <h2 class="footer_titles">Product</h2>
+          <ul>
+            <li><a href="">Hoodies</a></li>
+            <li><a href="">Shirts</a></li>
+            <li><a href="">Sweatshirts </a></li>
+          </ul>
+        </section>
+        <section class="footer_social">
+          <h2 class="footer_titles">Social</h2>
+          <div class="footer_social_logos">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-instagram"></i>
+          </div>
+        </section>
+      </footer>
+      <div class="rigth">Academlo. All Rigth Reserved</div>
+    </main>
+    <div class="cart_container compras_bag" id="cart_container">
+      <div class="cart_close">
+        <i class="bx bx-x bx-rotate-90" onclick="click" id="closer"></i>
+      </div>
+      <div><h2>My Cart</h2></div>
+      <div class="cart_img">
+        <img src="/assets/images/empty-cart.png" alt="Your bag" />
+        <h3>Your cart is empty</h3>
+        <p>
+          You can add items to your card by clicking on the "+" button on the
+          product page.
+        </p>
+      </div>
+      <div class="cart_value">
+        <div><span>0</span> items</div>
+        <div><span>$</span> 0.00</div>
+      </div>
+      <div class="container_comprar">
+        <button class="comprar">
+          <i class="bx bxs-check-shield"></i>
+          Checkout
+        </button>
+      </div>
     </div>
-    <div class="cart_value">
-      <div ><span>0</span> items</div>
-      <div><span>$</span> 0.00</div>
-    </div>  
-    <div class="container_comprar">
-      <button class="comprar">
-        <i class='bx bxs-check-shield' ></i>
-        Checkout
-      </button>
-    </div>
-    
-   
-   
-  </div>
- 
 
-  <script src="/assets/js/main.js"></script>
-  
-
-
-</body>
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>

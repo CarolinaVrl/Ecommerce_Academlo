@@ -39,30 +39,37 @@ const darthemechange = () => {
 theme.addEventListener("click", (e) => darthemechange());
 
 // bolsa de compras - carrito
-const bag =document.getElementById("bag_shop"
-)
-const carrito = document.getElementById("cart_container")
-const closerCarrito = document.getElementById("closer")
-bag.addEventListener("click", cb=>{
-  if (carrito.classList.contains("compras_bag")){
-    carrito.classList.remove("compras_bag")
-  }else{
-    
+const bag = document.getElementById("bag_shop");
+const carrito = document.getElementById("cart_container");
+const closerCarrito = document.getElementById("closer");
+bag.addEventListener("click", (cb) => {
+  if (carrito.classList.contains("compras_bag")) {
+    carrito.classList.remove("compras_bag");
+  } else {
   }
-})
-closerCarrito.addEventListener("click", cb =>{
-  if (carrito.classList.contains("compras_bag")){
-    
-  }carrito.classList.add("compras_bag")
-})
+});
+closerCarrito.addEventListener("click", (cb) => {
+  if (carrito.classList.contains("compras_bag")) {
+  }
+  carrito.classList.add("compras_bag");
+});
 
 // filtrado de productos
-const allProducts = document.getElementById("all_productos")
-const hoodie = document.getElementById("hoodies")
-const shirts = document.getElementById("shirts")
-const sweatshirt = document.getElementById("sweatshirt")
+const allProducts = document.getElementById("all_productos");
+const hoodie = document.getElementById("hoodies");
+const shirts = document.getElementById("shirts");
+const sweatshirt = document.getElementById("sweatshirt");
 
-allProducts.addEventListener("click", e =>{
-  
-})
+allProducts.addEventListener("click", (e) => {});
 
+/*Scroll */
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (scrollY >= 100) {
+    nav.classList.add("scroll-bg");
+  } else {
+    nav.classList.remove("scroll-bg");
+  }
+});
