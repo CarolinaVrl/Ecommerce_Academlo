@@ -479,12 +479,7 @@ a {
   margin-top: 40px;
 }
 
-/* mobile-portrait: min:320px - max:479px;
-mobile-landscape: min:480px - max:599px;
-small-tablet-portrait: min:600px - max:799px;
-small-tablet-landscape: min:800px - max:767px;
-tablet-portrait: min:768px - max:1023px;
-tablet-landscape: min:1024px; */
+
 
 /* Media querys */
 @media screen and (min-width: 576px) {
