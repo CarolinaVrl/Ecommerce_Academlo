@@ -55,3 +55,14 @@ closerCarrito.addEventListener("click", cb =>{
     
   }carrito.classList.add("compras_bag")
 })
+
+// filtrado de productos
+const allProducts = document.getElementById("all_productos")
+const hoodie = document.getElementById("hoodies")
+const shirts = document.getElementById("shirts")
+const sweatshirt = document.getElementById("sweatshirt")
+
+allProducts.addEventListener("click", e =>{
+  
+})
+

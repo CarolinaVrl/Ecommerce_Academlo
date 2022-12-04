@@ -290,11 +290,13 @@ body.dark {
   background-color: transparent;
   border-left: 1px solid var(--border-color);
   width: 150px;
+  color: var(--text-color);
 
   height: 70px;
 }
 .products_options_titles {
   font-size: 17px;
+  
   font-weight: 500;
 }
 .products_options_titles:hover {
@@ -334,11 +336,13 @@ body.dark {
   position: absolute;
   bottom: 0;
   width: 100%;
+  color: var(--title-color);
 }
 /* valor del producto */
 .box_products_prince {
   font-size: 17px;
   font-weight: 600;
+  color: var(--title-color);
 }
 /* stock */
 .stock {
@@ -361,14 +365,16 @@ body.dark {
   border: none;
   font-weight: 700;
   font-size: 15px;
+  color: var(--title-color);
+  background-color: var(--body-color);
   box-shadow: 8px 11px 17px -2px rgba(186, 177, 177, 0.75);
 }
 
 .box_products_add:hover {
   background-color: var(--first-color);
-  color: var(--container-color);
+  color: var(--card-color);
 }
-
+/* footer */
 footer {
   padding: 100px 0 150px 20px;
 
@@ -384,6 +390,9 @@ footer {
 .footer_container {
   width: 200px;
 }
+.footer_titles{
+  color: var(--title-color);
+}
 
 li {
   list-style: none;
@@ -396,6 +405,7 @@ a {
   display: flex;
   gap: 20px;
   font-size: 32px;
+  color: var(--title-color);
 }
 .footer_social_logos:hover {
   cursor: pointer;
@@ -654,6 +664,7 @@ tablet-landscape: min:1024px; */
 
   .footer_titles {
     font-size: 15px;
+    
   }
   .footer_social_logos {
     font-size: 18px;
