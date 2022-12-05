@@ -40,28 +40,13 @@ const darthemechange = () => {
 theme.addEventListener("click", (e) => darthemechange());
 
 // bolsa de compras - carrito
-const bag = document.getElementById("bag_shop");
-const carrito = document.getElementById("cart_container");
-const closerCarrito = document.getElementById("closer");
-bag.addEventListener("click", (cb) => {
+const bag = document.getElementById("bag_shop"
+)
+const carrito = document.getElementById("cart_container")
+const closerCarrito = document.getElementById("closer")
+bag.addEventListener("click", () => {
   if (carrito.classList.contains("compras_bag")) {
     carrito.classList.remove("compras_bag");
-  } else {
-  }
-});
-closerCarrito.addEventListener("click", (cb) => {
-  if (carrito.classList.contains("compras_bag")) {
-    const bag = document.getElementById("bag_shop"
-    )
-    const carrito = document.getElementById("cart_container")
-    const closerCarrito = document.getElementById("closer")
-    bag.addEventListener("click", () => {
-      if (carrito.classList.contains("compras_bag")) {
-        carrito.classList.remove("compras_bag");
-      }
-      carrito.classList.add("compras_bag");
-    });
-
   }
 })
 closerCarrito.addEventListener("click", () => {
@@ -94,12 +79,6 @@ const vibrarSocial = ((item) => {
 
 
 // filtrado de productos
-// const allProducts = document.getElementById("all_productos");
-// const hoodie = document.getElementById("hoodies");
-// const shirts = document.getElementById("shirts");
-// const sweatshirt = document.getElementById("sweatshirt");
-
-allProducts.addEventListener("click", (e) => { });
 let carritoCompras = []
 const mostrador = document.getElementById("mostrador");
 
@@ -118,7 +97,7 @@ const addingView = (arr) => {
     button>`
 
     mostrador.appendChild(seccion)
-  });
+  });                        
 }
 
 
@@ -138,20 +117,9 @@ const filtradoMenu = ((nombre) => {
 
 // compra de productos
 
-/*Scroll */
-
-const nav = document.querySelector("nav");
 const compraEnElCarrito = ((productosid) => {
   const item = items.find((prod) => prod.id === productosid)
   carritoCompras.push(item)
   console.log(carritoCompras)
 
 })
-
-window.addEventListener("scroll", () => {
-  if (scrollY >= 100) {
-    nav.classList.add("scroll-bg");
-  } else {
-    nav.classList.remove("scroll-bg");
-  }
-});
