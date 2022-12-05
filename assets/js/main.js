@@ -62,7 +62,8 @@ closerCarrito.addEventListener("click", (cb) => {
       carrito.classList.add("compras_bag");
     });
 
-  })
+  }
+})
 closerCarrito.addEventListener("click", () => {
   carrito.classList.add("compras_bag");
 })
@@ -93,10 +94,10 @@ const vibrarSocial = ((item) => {
 
 
 // filtrado de productos
-const allProducts = document.getElementById("all_productos");
-const hoodie = document.getElementById("hoodies");
-const shirts = document.getElementById("shirts");
-const sweatshirt = document.getElementById("sweatshirt");
+// const allProducts = document.getElementById("all_productos");
+// const hoodie = document.getElementById("hoodies");
+// const shirts = document.getElementById("shirts");
+// const sweatshirt = document.getElementById("sweatshirt");
 
 allProducts.addEventListener("click", (e) => { });
 let carritoCompras = []
