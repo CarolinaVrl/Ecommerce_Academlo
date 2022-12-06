@@ -112,6 +112,7 @@ const compraEnElCarrito = (productosid) => {
   
 };
 
+<<<<<<< HEAD
 
 
 
@@ -132,6 +133,9 @@ agregarNumber.innerHTML = `
 ` 
 contenedorDeCantidadProd.appendChild(agregarNumber)
 
+=======
+/*Scroll */
+>>>>>>> 5151c699592114fd8c115469ca1ce098a6070d7d
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
   if (scrollY >= 100) {
@@ -142,6 +146,7 @@ window.addEventListener("scroll", () => {
 });
 
 // Precarga
+<<<<<<< HEAD
 // const loadPantalla = document.getElementById("load") 
 // setTimeout(() => {
 //  loadPantalla.classList.add
@@ -149,34 +154,13 @@ window.addEventListener("scroll", () => {
  
 // }, 5000);
 
+=======
+const loadPantalla = document.getElementById("load");
+setTimeout(() => {
+  loadPantalla.classList.add("esconderse");
+}, 6000);
+>>>>>>> 5151c699592114fd8c115469ca1ce098a6070d7d
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener( "DOMContentLoaded", () => {
-  addingView(items)
-})
+document.addEventListener("DOMContentLoaded", () => {
+  addingView(items);
+});
