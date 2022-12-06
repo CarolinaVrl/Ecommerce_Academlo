@@ -110,8 +110,7 @@ const compraEnElCarrito = (productosid) => {
   console.log(carritoCompras);
 };
 
-
-
+/*Scroll */
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
   if (scrollY >= 100) {
@@ -122,38 +121,11 @@ window.addEventListener("scroll", () => {
 });
 
 // Precarga
-const loadPantalla = document.getElementById("load") 
+const loadPantalla = document.getElementById("load");
 setTimeout(() => {
- loadPantalla.classList.add("esconderse")
-}, 5000);
+  loadPantalla.classList.add("esconderse");
+}, 6000);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener( "DOMContentLoaded", () => {
-  addingView(items)
-})
+document.addEventListener("DOMContentLoaded", () => {
+  addingView(items);
+});
