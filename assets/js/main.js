@@ -25,21 +25,20 @@ const items = [
   },
 ];
 // Variables
-const contenedorDeCantidadProd = document.getElementById("card")
+const contenedorDeCantidadProd = document.getElementById("card");
 const theme = document.getElementById("theme"); //Para el fondo de pantalla
 const body = document.body; //El body
 const bag = document.getElementById("bag_shop");
 const carrito = document.getElementById("cart_container");
 const closerCarrito = document.getElementById("closer"); //Salir de la pantalla de compra
-let carritoCompras = [];//El carrito de compras del cliente
-const mostrador = document.getElementById("mostrador");//Donde se muestran los productos a la venta
-const spanCantidad = document.createElement("span")
-const totalPagar = document.getElementById("total_pagar")
-totalPagar.textContent = "$ 0.00"
-spanCantidad.classList.add("cantidad_prod")
-spanCantidad.textContent=0
-contenedorDeCantidadProd.appendChild(spanCantidad)
-
+let carritoCompras = []; //El carrito de compras del cliente
+const mostrador = document.getElementById("mostrador"); //Donde se muestran los productos a la venta
+const spanCantidad = document.createElement("span");
+const totalPagar = document.getElementById("total_pagar");
+totalPagar.textContent = "$ 0.00";
+spanCantidad.classList.add("cantidad_prod");
+spanCantidad.textContent = 0;
+contenedorDeCantidadProd.appendChild(spanCantidad);
 
 // -----------------------------FUNCIONES---------------------------------------------------------
 // imagen del theme
@@ -56,7 +55,6 @@ theme.addEventListener("click", (e) => darthemechange());
 
 // bolsa de compras - carrito
 
-
 bag.addEventListener("click", () => {
   if (carrito.classList.contains("compras_bag")) {
     carrito.classList.remove("compras_bag");
@@ -66,15 +64,11 @@ closerCarrito.addEventListener("click", () => {
   carrito.classList.add("compras_bag");
 });
 
-
-
 const vibrarSocial = (item) => {
   item.target.classList.toggle("bx-tada");
 };
 
 // filtrado de productos
-
-
 
 const addingView = (arr) => {
   mostrador.innerHTML = "";
@@ -108,14 +102,12 @@ const filtradoMenu = (nombre) => {
 // compra de productos
 
 const compraEnElCarrito = (productosid) => {
-  const item = items.find((prod) => prod.id=== productosid);
+  const item = items.find((prod) => prod.id === productosid);
   carritoCompras.push(item);
-  spanCantidad.textContent = carritoCompras.length
-  let pagar = carritoCompras.reduce
-  
-  
-  totalPagar.textContent = `$ ${pagar}`
-  
+  spanCantidad.textContent = carritoCompras.length;
+  let pagar = carritoCompras.reduce;
+
+  totalPagar.textContent = `$ ${pagar}`;
 };
 
 /*Scroll */
@@ -132,377 +124,11 @@ window.addEventListener("scroll", () => {
 const loadPantalla = document.getElementById("load");
 setTimeout(() => {
   loadPantalla.classList.add("esconderse");
-}, 2000);
-
+}, 3000);
 
 //Cuantos productos hay en tu bolsa
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ----------------------------------Angel--------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   addingView(items);
