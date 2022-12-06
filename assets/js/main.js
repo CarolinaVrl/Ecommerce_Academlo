@@ -35,8 +35,10 @@ let carritoCompras = []; //El carrito de compras del cliente
 const mostrador = document.getElementById("mostrador"); //Donde se muestran los productos a la venta
 const spanCantidad = document.createElement("span");
 const totalPagar = document.getElementById("total_pagar");
+totalPagar.textContent = "$ 0.0";
 spanCantidad.classList.add("cantidad_prod");
-spanCantidad.textContent = "$";
+spanCantidad.textContent = "0";
+
 contenedorDeCantidadProd.appendChild(spanCantidad);
 
 // -----------------------------FUNCIONES---------------------------------------------------------
@@ -104,8 +106,12 @@ const compraEnElCarrito = (productosid) => {
   const item = items.find((prod) => prod.id === productosid);
   carritoCompras.push(item);
   spanCantidad.textContent = carritoCompras.length;
-  
+
+  totalPagar.textContent = `$ ${carritoCompras.reduce((total, item) => item.price + total, 0)}`
+
 };
+
+
 
 /*Scroll */
 const nav = document.querySelector("nav");
