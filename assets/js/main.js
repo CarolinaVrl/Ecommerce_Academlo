@@ -105,9 +105,7 @@ const compraEnElCarrito = (productosid) => {
   const item = items.find((prod) => prod.id === productosid);
   carritoCompras.push(item);
   spanCantidad.textContent = carritoCompras.length;
-  let pagar = carritoCompras.reduce;
-
-  totalPagar.textContent = `$ ${pagar}`;
+  
 };
 
 /*Scroll */
