@@ -72,12 +72,15 @@ body.dark {
   padding-right: 10px;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
+  top: 0;
 }
 
 .nav-menu.scroll-bg {
   background-color: whitesmoke;
   width: 100%;
+  transition: 0.5s;
+  box-shadow: -2px 6px 11px 0px rgba(186, 177, 177, 0.75);
   z-index: 5;
 }
 
@@ -168,6 +171,7 @@ body.dark {
   line-height: 30px;
   padding: 10px;
   margin-left: 25px;
+  margin-top: 70px;
 }
 
 .title {
@@ -314,6 +318,10 @@ body.dark {
 
 .bx {
   cursor: pointer;
+}
+
+.store {
+  color: var(--title-color);
 }
 
 /*---------------------------------------------------------------------*/
@@ -508,6 +516,8 @@ a {
 }
 .bx-x {
   font-size: 50px;
+  position: absolute;
+  z-index: 20;
 }
 
 .cart_img {
@@ -704,6 +714,7 @@ a {
 
   .btn-section {
     position: sticky;
+    margin-top: 40px;
   }
 
   .btn-discover {
@@ -815,6 +826,10 @@ a {
     top: 0;
   }
 
+  .btn-section {
+    margin-top: 80px;
+  }
+
   /* Diana */
   .products_container {
     margin-top: 200px;
@@ -863,4 +878,10 @@ a {
     top: 40px;
   }
   /* Diana */
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    margin: 0;
+  }
 }
