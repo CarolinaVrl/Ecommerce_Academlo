@@ -35,9 +35,8 @@ let carritoCompras = []; //El carrito de compras del cliente
 const mostrador = document.getElementById("mostrador"); //Donde se muestran los productos a la venta
 const spanCantidad = document.createElement("span");
 const totalPagar = document.getElementById("total_pagar");
-totalPagar.textContent = "$ 0.00";
 spanCantidad.classList.add("cantidad_prod");
-spanCantidad.textContent = 0;
+spanCantidad.textContent = "$";
 contenedorDeCantidadProd.appendChild(spanCantidad);
 
 // -----------------------------FUNCIONES---------------------------------------------------------
@@ -122,7 +121,7 @@ window.addEventListener("scroll", () => {
 const loadPantalla = document.getElementById("load");
 setTimeout(() => {
   loadPantalla.classList.add("esconderse");
-}, 3000);
+}, 2000);
 
 //Productos en la bolsa
 
