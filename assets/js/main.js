@@ -110,6 +110,8 @@ const compraEnElCarrito = (productosid) => {
   console.log(carritoCompras);
 };
 
+
+
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
   if (scrollY >= 100) {
@@ -118,3 +120,34 @@ window.addEventListener("scroll", () => {
     nav.classList.remove("scroll-bg");
   }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener( "DOMContentLoaded", () => {
+  addingView(items)
+})

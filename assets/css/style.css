@@ -546,6 +546,27 @@ a {
   color: var(--text-color);
   margin-top: 40px;
 }
+/* carrito de compras - posicion */
+ .cart-design{
+  position: relative;
+
+} 
+/* cantidad de productos */
+.cantidad_prod{
+  position: absolute;
+  bottom: -10px;
+  right: 5px;
+  background-color: var(--title-color);
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  border-radius: 50%;
+  color: var(--body-color)  ;
+}
+
+
 
 /* Media querys */
 @media screen and (min-width: 576px) {
@@ -581,6 +602,7 @@ a {
 
   .cart-counter {
     left: 500px;
+    
   }
 
   .icon1 {
