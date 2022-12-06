@@ -113,3 +113,4 @@
               <i class="bx bx-plus"></i>
             </span>
           </div>
+<span class="cantidad_prod" id="cart-counter">0</span>

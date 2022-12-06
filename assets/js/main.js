@@ -24,6 +24,8 @@ const items = [
     quantity: 20,
   },
 ];
+// Variables
+const contenedorDeCantidadProd = document.getElementById("card")
 
 // imagen del theme
 const theme = document.getElementById("theme");
@@ -107,10 +109,28 @@ const filtradoMenu = (nombre) => {
 const compraEnElCarrito = (productosid) => {
   const item = items.find((prod) => prod.id === productosid);
   carritoCompras.push(item);
-  console.log(carritoCompras);
+  
 };
 
 
+
+
+const quantityProducts = (carritoCompras) =>{
+  let cantidad = carritoCompras.reduce(item => item.quantity,0)
+  
+  return cantidad
+}
+
+
+
+const agregarNumber = document.createElement8("span")
+agregarNumber.classList.add("cantidad_prod")
+agregarNumber.textContent="perro"
+agregarNumber.innerHTML = `
+
+
+` 
+contenedorDeCantidadProd.appendChild(agregarNumber)
 
 const nav = document.querySelector("nav");
 window.addEventListener("scroll", () => {
@@ -122,10 +142,13 @@ window.addEventListener("scroll", () => {
 });
 
 // Precarga
-const loadPantalla = document.getElementById("load") 
-setTimeout(() => {
- loadPantalla.classList.add("esconderse")
-}, 5000);
+// const loadPantalla = document.getElementById("load") 
+// setTimeout(() => {
+//  loadPantalla.classList.add
+//  ("esconderse")
+ 
+// }, 5000);
+
 
 
 
