@@ -211,7 +211,7 @@
       <div>
         <h2>My Cart</h2>
       </div>
-      <div class="cart_img">
+      <div class="cart_img" id="cart_img">
         <img src="/assets/images/empty-cart.png" alt="Your bag" />
         <h3>Your cart is empty</h3>
         <p>
@@ -219,8 +219,76 @@
           product page.
         </p>
       </div>
+      <!-- contenedor de objetos en la compra  -->
+      <!-- <article class="container_contenedor">
+        <section  class="carta_item">
+           <img class="cart-img" src="./assets/images/featured3.png" alt="" />
+           <div class="cart-details">
+            <h3 class="cart-title">Sweatshirt</h3>
+            <span class="cart-stock"
+              >Stock: 10 | <span class="cart-price">$24.00</span></span
+            >
+            <span class="cart-subtotal"> Subtotal: $24.00 </span>
+                <div class="cart-amount-content">
+               <span class="cart__amount-box minus" data-id="1">
+                  <i class="bx bx-minus"></i>
+                </span>
+                <span class="cart-amount-number">1 units</span>
+    
+                <span class="cart__amount-box plus" data-id="1">
+                  <i class="bx bx-plus"></i>
+                </span>
+              </div>
+    
+              <i class="bx bx-trash-alt" style="color: #ef0505"></i>
+           </div>
+           <section  class="carta_item">
+            <img class="cart-img" src="./assets/images/featured3.png" alt="" />
+            <div class="cart-details">
+             <h3 class="cart-title">Sweatshirt</h3>
+             <span class="cart-stock"
+               >Stock: 10 | <span class="cart-price">$24.00</span></span
+             >
+             <span class="cart-subtotal"> Subtotal: $24.00 </span>
+                 <div class="cart-amount-content">
+                <span class="cart__amount-box minus" data-id="1">
+                   <i class="bx bx-minus"></i>
+                 </span>
+                 <span class="cart-amount-number">1 units</span>
+     
+                 <span class="cart__amount-box plus" data-id="1">
+                   <i class="bx bx-plus"></i>
+                 </span>
+               </div>
+     
+               <i class="bx bx-trash-alt" style="color: #ef0505"></i>
+            </div>
+            <section  class="carta_item">
+              <img class="cart-img" src="./assets/images/featured3.png" alt="" />
+              <div class="cart-details">
+               <h3 class="cart-title">Sweatshirt</h3>
+               <span class="cart-stock"
+                 >Stock: 10 | <span class="cart-price">$24.00</span></span
+               >
+               <span class="cart-subtotal"> Subtotal: $24.00 </span>
+                   <div class="cart-amount-content">
+                  <span class="cart__amount-box minus" data-id="1">
+                     <i class="bx bx-minus"></i>
+                   </span>
+                   <span class="cart-amount-number">1 units</span>
+       
+                   <span class="cart__amount-box plus" data-id="1">
+                     <i class="bx bx-plus"></i>
+                   </span>
+                 </div>
+       
+                 <i class="bx bx-trash-alt" style="color: #ef0505"></i>
+              </div>
+        
+       
+      </article> -->
       <div class="cart_value">
-        <div><span>0</span> items</div>
+        <div><span id="total_items"></span> items</div>
         <div class="tota_pagar" id="total_pagar"><span>$</span> </div>
       </div>
       <div class="container_comprar">
@@ -229,6 +297,8 @@
           Checkout
         </button>
       </div>
+
+   
       
    
     

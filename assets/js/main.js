@@ -35,6 +35,9 @@ let carritoCompras = []; //El carrito de compras del cliente
 const mostrador = document.getElementById("mostrador"); //Donde se muestran los productos a la venta
 const spanCantidad = document.createElement("span");
 const totalPagar = document.getElementById("total_pagar");
+const totalitems = document.getElementById("total_items");
+const imagenCarro = document.getElementById("cart_img")
+totalitems.textContent = "0"
 totalPagar.textContent = "$ 0.0";
 spanCantidad.classList.add("cantidad_prod");
 spanCantidad.textContent = "0";
@@ -104,12 +107,16 @@ const filtradoMenu = (nombre) => {
 
 const compraEnElCarrito = (productosid) => {
   const item = items.find((prod) => prod.id === productosid);
+  if(item.select){
+    item.select++
+  } item.select = 1
   carritoCompras.push(item);
+  imagenCarro.classList.replace("cart_img","cart_img_hiden")
   spanCantidad.textContent = carritoCompras.length;
-
   totalPagar.textContent = `$ ${carritoCompras.reduce((total, item) => item.price + total, 0)}`
-
+  totalitems.textContent = `${carritoCompras.reduce((total, item) => item.select + total, 0)}`
 };
+
 
 
 
