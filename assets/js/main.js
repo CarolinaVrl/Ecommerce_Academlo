@@ -104,31 +104,31 @@ const filtradoMenu = (nombre) => {
 };
 
 //Tarjetas
-function elementoDeCompra(compras){ 
-  const contenedorCompra = document.getElementById("contenedorCompra")
-  contenedorCompra.classList.add("container_contenedor")
-  const tarjeta = document.createElement("section")
-  tarjeta.classList.add("carta_item");
-  tarjeta.innerHTML = `
-  < img class="cart-img" src=${compras.image}>
-  <h2 class="cart-title">  ${compras.name}</h2>
-  <h3>  ${compras.price}.00</h3>
-  <span class ="stock"> Stocks ${compras.quantity} </span>
-  <span class ="cart-price> Valor ${compras.price}</span>
-  <span clss ="cart-subtotal"> suma de subtotal por item</span>
-  `
-  const cantidades = document.createElement("div")
-  cantidades.classList.add("cart-amount-content")
-  cantidades.textContent = `canitdades escogidas`
-  cantidades.innerHTML= `
-  <i class="bx bx-minus"</i>
-  <span class="cart-amount-number"="cantidad de unidades del mismo item"
-  <i class="bx bx-plus"</i>
-  <i class="bx bx-trash-alt"</i>`
+// function elementoDeCompra(compras){ 
+//   const contenedorCompra = document.getElementById("contenedorCompra")
+//   contenedorCompra.classList.add("container_contenedor")
+//   const tarjeta = document.createElement("section")
+//   tarjeta.classList.add("carta_item");
+//   tarjeta.innerHTML = `
+//   < img class="cart-img" src=${compras.image}>
+//   <h2 class="cart-title">  ${compras.name}</h2>
+//   <h3>  ${compras.price}.00</h3>
+//   <span class ="stock"> Stocks ${compras.quantity} </span>
+//   <span class ="cart-price> Valor ${compras.price}</span>
+//   <span clss ="cart-subtotal"> suma de subtotal por item</span>
+//   `
+//   const cantidades = document.createElement("div")
+//   cantidades.classList.add("cart-amount-content")
+//   cantidades.textContent = `canitdades escogidas`
+//   cantidades.innerHTML= `
+//   <i class="bx bx-minus"</i>
+//   <span class="cart-amount-number"="cantidad de unidades del mismo item"
+//   <i class="bx bx-plus"</i>
+//   <i class="bx bx-trash-alt"</i>`
   
-  contenedorCompra.appendChild(tarjeta)
-  tarjeta.appendChild(cantidades)
-}
+//   contenedorCompra.appendChild(tarjeta)
+//   tarjeta.appendChild(cantidades)
+// }
 
 
 
