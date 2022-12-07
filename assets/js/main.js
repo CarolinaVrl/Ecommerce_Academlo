@@ -82,7 +82,7 @@ const addingView = (arr) => {
     seccion.classList.add("box_products");
     seccion.innerHTML = `
     <img src=${item.image} alt="producto ">
-    <h2>  ${item.name}</h2>
+    <h2 class="prod_mostrador">  ${item.name}</h2>
     <h3>  ${item.price}.00</h3>
     <span class ="stock"> Stocks ${item.quantity} </span>
     <button class="box_products_add"  onclick="compraEnElCarrito(${item.id})"  id="addCarrito ${item.id}"> + </
