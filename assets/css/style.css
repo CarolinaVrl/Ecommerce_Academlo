@@ -592,21 +592,25 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: loading 3s infinite ease-in-out;
+  left: 0;
+  top:0;  
+}
+.load > svg{
+  position: relative;
+  animation: loading 2s infinite linear;
+  width: 100px;
+  height: 100px;
   fill: var(--first-color);
 }
 @keyframes loading {
   0% {top: 0;
   }
-  50% {left: 15px;
+  50% {top: 20px;
   }
   100% { top: 0;
   }
 }
-.load > svg {
-  width: 100px;
-  height: 100px;
-}
+
 .esconderse {
   display: none;
 }
