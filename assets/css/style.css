@@ -740,7 +740,7 @@ a {
   }
 
   .icon2 {
-    /*display: none;*/
+    display: none;
   }
 
   .icon1 {
@@ -832,6 +832,7 @@ a {
   .btn-section {
     margin-top: 80px;
   }
+  
 
   /* Diana */
   .products_container {
