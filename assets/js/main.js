@@ -37,6 +37,7 @@ const spanCantidad = document.createElement("span");
 const totalPagar = document.getElementById("total_pagar");
 const totalitems = document.getElementById("total_items");
 const imagenCarro = document.getElementById("cart_img")
+const aumentar = document.getElementById("aumentar")
 totalitems.textContent = "0"
 totalPagar.textContent = "$ 0.0";
 spanCantidad.classList.add("cantidad_prod");
@@ -82,11 +83,9 @@ const addingView = (arr) => {
     seccion.classList.add("box_products");
     seccion.innerHTML = `
     <img src=${item.image} alt="producto ">
-    <h2 class="prod_mostrador">  ${item.name}</h2>
-    <h3>  ${item.price}.00</h3>
-    <span class ="stock"> Stocks ${item.quantity} </span>
+    <div class= "prod_detalles">       <h3 class="prod_detalles_price"> $ ${item.price}.00 <span class ="stock"> Stocks ${item.quantity} </span></h3>  <h2 class="prod_mostrador">  ${item.name}</h2>
     <button class="box_products_add"  onclick="compraEnElCarrito(${item.id})"  id="addCarrito ${item.id}"> + </
-    button>`;
+    button></div`;
 
     mostrador.appendChild(seccion);
   });
@@ -111,20 +110,20 @@ function elementoDeCompra(compras){
   tarjeta.classList.add("carta_item");
   tarjeta.innerHTML = `
   <img class="cart-img" src=${compras.image}>
+  <div class="cart_tarjeta_detalles">
+  <div class="cart_tarjeta_detalles_text">
   <h2 class="cart-title">  ${compras.name}</h2>
-  <h3>  ${compras.price}.00</h3>
-  <span class ="stock"> Stocks ${compras.quantity} </span>
-  <span class ="cart-price> Valor ${compras.price}</span>
-  <span clss ="cart-subtotal"> suma de subtotal por item</span>
-  `
-  const cantidades = document.createElement("div")
-  cantidades.classList.add("cart-amount-content")
-  cantidades.textContent = `canitdades escogidas`
-  cantidades.innerHTML= `
-  <i class="bx bx-minus"</i>
-  <span class="cart-amount-number"="cantidad de unidades del mismo item"
-  <i class="bx bx-plus"</i>
-  <i class="bx bx-trash-alt"</i>`
+  <h3> <span class ="stock"> Stocks ${compras.quantity} </span> $ ${compras.price}.00</h3>
+  
+  <h3 class ="cart-price> <span clss ="cart-subtotal"> Subtotal</span> $ ${(compras.price )}</h3>
+  </div>
+  <div class= "cart-amount-content">
+
+  <i class="bx bx-minus" onclick="click" id="disminuir"  </i>
+  <span> ${compras.select}
+  <i class='bx bx-plus' onclick="click" id="aumentar"></i>
+  <i class="bx bx-trash-alt" onclick ="click" </i>
+  </div>`
   
   contenedorCompra.appendChild(tarjeta)
   tarjeta.appendChild(cantidades)
@@ -156,6 +155,10 @@ const compraEnElCarrito = (productosid) => {
   
 };
 
+// // Botones de aumentar o disminuir event
+// aumentar.addEventListener("click", ()=>{
+//   carritoCompras.forEach(x => x.select++)
+// })
 
 
 
