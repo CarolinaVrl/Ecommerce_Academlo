@@ -38,6 +38,7 @@ const totalPagar = document.getElementById("total_pagar");
 const totalitems = document.getElementById("total_items");
 const imagenCarro = document.getElementById("cart_img")
 const aumentar = document.getElementById("aumentar")
+const contenedorCompra = document.getElementById("contenedorCompra")
 totalitems.textContent = "0"
 totalPagar.textContent = "$ 0.0";
 spanCantidad.classList.add("cantidad_prod");
@@ -104,7 +105,9 @@ const filtradoMenu = (nombre) => {
 
 // Tarjetas
 function elementoDeCompra(compras){ 
-  const contenedorCompra = document.getElementById("contenedorCompra")
+  
+  
+  
   contenedorCompra.classList.add("container_contenedor")
   const tarjeta = document.createElement("section")
   tarjeta.classList.add("carta_item");
@@ -126,7 +129,7 @@ function elementoDeCompra(compras){
   </div>`
   
   contenedorCompra.appendChild(tarjeta)
-  tarjeta.appendChild(cantidades)
+  
 }
 
 
@@ -147,7 +150,8 @@ const compraEnElCarrito = (productosid) => {
   console.log(carritoCompras)
   totalPagar.textContent = `$ ${carritoCompras.reduce((total, item) => item.price + total, 0)}`
   totalitems.textContent = `${carritoCompras.reduce((total, item) => item.select + total, 0)}`
- 
+  
+  contenedorCompra.innerHTML=""
   for (let productos of carritoCompras){
     elementoDeCompra(productos)
     
