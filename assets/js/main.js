@@ -110,7 +110,7 @@ function elementoDeCompra(compras){
   const tarjeta = document.createElement("section")
   tarjeta.classList.add("carta_item");
   tarjeta.innerHTML = `
-  < img class="cart-img" src=${compras.image}>
+  <img class="cart-img" src=${compras.image}>
   <h2 class="cart-title">  ${compras.name}</h2>
   <h3>  ${compras.price}.00</h3>
   <span class ="stock"> Stocks ${compras.quantity} </span>
